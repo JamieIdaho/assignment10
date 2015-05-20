@@ -2,6 +2,7 @@
 @import "vendor/neat/neat";
 
 $backgroundColor: #F5F5F1;
+$teal: #3EAAC3;
 
 .outerContainer {
   width: 100%;
@@ -10,19 +11,53 @@ $backgroundColor: #F5F5F1;
 
 header {
   height: 80px;
-  width: 100%;
   background-color: white;
+  @include outer-container();
+  // width: 100%;
+  // margin: 0 auto;
+
+  img {
+    @include span-columns(2);
+    width: 100px;
+    margin-top: 23px;
+  }
+
+  form {
+    // @include span-columns(10);
+    //  margin-top: 40px;
+
+    button {
+      background-color: $teal;
+      color: white;
+    }
+  }
+
+  button {
+    display: inline-block;
+    margin-top: 40px;
+    color: gray;
+    background-color: white;
+
+  }
 
 }
 
 section {
   @include outer-container();
+  margin-top: 50px ;
+
+
+
 
   .sidebar {
   @include span-columns(3);
+
+
       .categories {
         height: 335px;
         background-color: white;
+        margin-bottom: 50px;
+
       }
 
       .refine {
@@ -31,8 +66,27 @@ section {
       }
   }
   .content {
-    @include span-columns(7);
-    //border: 2px solid black;
+    @include span-columns(9);
+
+    ul {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      height: 200px;
+      // width: 200px;
+      background-color: white;
+      margin-bottom: 25px;
+      @include span-columns(3 of 9);
+      @include omega(3n);
+
+
+
+
+      }
+
   }
 
 }

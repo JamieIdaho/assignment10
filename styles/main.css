@@ -12,13 +12,42 @@ html {
 
 header {
   height: 80px;
-  width: 100%;
+  background-color: white;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+header::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+header img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  width: 100px;
+  margin-top: 23px; }
+
+header img:last-child {
+  margin-right: 0; }
+
+header form button {
+  background-color: #3EAAC3;
+  color: white; }
+
+header button {
+  display: inline-block;
+  margin-top: 40px;
+  color: gray;
   background-color: white; }
 
 section {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 50px; }
 
 section::after {
   clear: both;
@@ -36,7 +65,8 @@ section .sidebar:last-child {
 
 section .sidebar .categories {
   height: 335px;
-  background-color: white; }
+  background-color: white;
+  margin-bottom: 50px; }
 
 section .sidebar .refine {
   height: 680px;
@@ -46,7 +76,30 @@ section .content {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 57.35098%; }
+  width: 74.41059%; }
 
 section .content:last-child {
   margin-right: 0; }
+
+section .content ul {
+  margin: 0 auto;
+  padding: 0; }
+
+section .content li {
+  list-style: none;
+  height: 200px;
+  background-color: white;
+  margin-bottom: 25px;
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 31.22104%; }
+
+section .content li:last-child {
+  margin-right: 0; }
+
+section .content li:nth-child(3n) {
+  margin-right: 0; }
+
+section .content li:nth-child(3n+1) {
+  clear: left; }
