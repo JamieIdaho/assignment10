@@ -1,0 +1,40 @@
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
+
+$backgroundColor: #F5F5F1;
+
+.outerContainer {
+  width: 100%;
+  background-color: $backgroundColor;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+
+}
+
+section {
+  @include outer-container();
+
+  .sidebar {
+  @include span-columns(3);
+      .categories {
+        height: 335px;
+        background-color: white;
+      }
+
+      .refine {
+        height: 680px;
+        background-color: white;
+      }
+  }
+  .content {
+    @include span-columns(7);
+    //border: 2px solid black;
+  }
+
+}
+
+
