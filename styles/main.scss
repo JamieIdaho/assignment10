@@ -12,34 +12,40 @@ $teal: #3EAAC3;
 header {
   height: 80px;
   background-color: white;
-  @include outer-container();
-  // width: 100%;
-  // margin: 0 auto;
 
-  img {
-    @include span-columns(2);
+
+  ul {
+    list-style: none;
+    display: -webkit-inline-box;
+
+  .logo {
     width: 100px;
     margin-top: 23px;
   }
 
   form {
-    // @include span-columns(10);
-    //  margin-top: 40px;
 
     button {
       background-color: $teal;
       color: white;
+      }
     }
-  }
 
   button {
-    display: inline-block;
     margin-top: 40px;
     color: gray;
     background-color: white;
+    }
+
+
+
+   img {
+    width: 30px;
+    margin: 10px;
+    // border-right: 1px solid gray;
+   }
 
   }
-
 }
 
 section {
@@ -57,6 +63,19 @@ section {
         height: 335px;
         background-color: white;
         margin-bottom: 50px;
+
+        ul {
+          list-style: none;
+
+        }
+
+        li a {
+          list-style: none;
+          color: $teal;
+          text-decoration: none;
+          line-height: 1.5em;
+
+        }
 
       }
 
