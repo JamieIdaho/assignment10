@@ -6,6 +6,15 @@ $teal: #3EAAC3;
 $lightGray: #B2B2B2;
 $limeGreen: #7BBE4C;
 $roboto: 'Roboto', sans-serif;
+$red: #F11439;
+$orange: #FD7F23;
+$yellow: #F2CB30;
+$green: #20C024;
+$blue: #26CCF1;
+$purple: #A527EF;
+
+
+@mixin littleBoxes($height, $width, $color, $border){height: $height; width: $width; background-color: $color; border: $border};
 
 .outerContainer {
   width: 100%;
@@ -19,11 +28,11 @@ header {
   .headerContent {
     height: 80px;
 
-
   }
 
   .headerLeft {
     float: left;
+    height: 80px;
 
   }
 
@@ -50,6 +59,8 @@ header {
     input {
       width: 300px;
       height: 33px;
+      border-radius: 5px;
+
     }
 
     .search {
@@ -57,6 +68,8 @@ header {
       color: white;
       height: 33px;
       width: 82px;
+      border-radius: 5px;
+
       }
     }
 
@@ -67,6 +80,7 @@ header {
     margin-left: 20px;
     height: 33px;
     width: 82px;
+    border-radius: 5px;
 
     //@include triangle (20px, gray, down);
     }
@@ -82,9 +96,37 @@ header {
   }
 }
 
+
+
+  .aboveSection {
+    height: 60px;
+    font-size: 12px;
+    display: inline;
+    }
+
+
+  .leftText {
+    @include span-columns(3);
+    height: 60px;
+    }
+
+  .middleAndRight {
+    @include span-columns(9);
+    height: 60px;
+
+    .middleText {
+
+    }
+
+    .rightText {
+
+    }
+  }
+
 section {
   @include outer-container();
-  margin-top: 50px ;
+  margin-top: 0px ;
+
 
 
 
@@ -135,10 +177,10 @@ section {
           padding-bottom: 40px;
           line-height: 1.7em;
 
-          // input.radio:checked ~ label {
-          //   background-color:white;
-          //   color: $teal;
-          // }
+          input .radio:checked {
+            background-color:white;
+            color: $teal;
+          }
 
           label {
             color: $teal;
@@ -146,8 +188,10 @@ section {
         }
 
         .price {
-          border-bottom: 1px solid gray;
+          border-bottom: 1px solid $lightGray;
           padding-bottom: 40px;
+          //border-radius: 5px;
+
         }
 
         .price span {
@@ -157,15 +201,74 @@ section {
 
         .price label {
           padding: 15px;
-          border: 1px solid gray;
+          border: 1px solid $lightGray;
           color: $lightGray;
+          border-radius: 5px;
+
 
           .arrow {
             padding: 8px;
           }
         }
+      .filterByColor {
+
+        display: inline;
+
+          .red {
+            @include littleBoxes(20px, 20px, $red, 1px solid $lightGray);
+            border-radius: 5px;
+          }
+
+          .orange {
+
+            @include littleBoxes(20px, 20px, $orange, 1px solid $lightGray);
+            border-radius: 5px;
+
+          }
+
+          .yellow {
+            @include littleBoxes(20px, 20px, $yellow, 1px solid $lightGray);
+            border-radius: 5px;
+
+          }
+
+          .green {
+            @include littleBoxes(20px, 20px, $green, 1px solid $lightGray);
+            border-radius: 5px;
+
+          }
+
+          .blue {
+            @include littleBoxes(20px, 20px, $blue, 1px solid $lightGray);
+            border-radius: 5px;
+
+          }
+
+          .purple {
+            @include littleBoxes(20px, 20px, $purple, 1px solid $lightGray);
+            border-radius: 5px;
+
+          }
+
+          .black {
+            @include littleBoxes(20px, 20px, black, 1px solid $lightGray);
+            border-radius: 5px;
+
+          }
+
+          .white {
+            @include littleBoxes(20px, 20px, white, 1px solid $lightGray);
+            border-radius: 5px;
+
+          }
+
+
+      }
+
       }
   }
+
+
 
 
   .content {

@@ -17,7 +17,8 @@ header .headerContent {
   height: 80px; }
 
 header .headerLeft {
-  float: left; }
+  float: left;
+  height: 80px; }
 
 header .headerRight {
   float: right;
@@ -38,13 +39,15 @@ header ul form {
 
 header ul form input {
   width: 300px;
-  height: 33px; }
+  height: 33px;
+  border-radius: 5px; }
 
 header ul form .search {
   background-color: #3EAAC3;
   color: white;
   height: 33px;
-  width: 82px; }
+  width: 82px;
+  border-radius: 5px; }
 
 header ul .browse {
   margin-top: 40px;
@@ -52,17 +55,43 @@ header ul .browse {
   background-color: white;
   margin-left: 20px;
   height: 33px;
-  width: 82px; }
+  width: 82px;
+  border-radius: 5px; }
 
 header ul img {
   width: 30px;
   margin: 10px; }
 
+.aboveSection {
+  height: 60px;
+  font-size: 12px;
+  display: inline; }
+
+.leftText {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  height: 60px; }
+
+.leftText:last-child {
+  margin-right: 0; }
+
+.middleAndRight {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  height: 60px; }
+
+.middleAndRight:last-child {
+  margin-right: 0; }
+
 section {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px; }
+  margin-top: 0px; }
 
 section::after {
   clear: both;
@@ -110,11 +139,15 @@ section .sidebar .refine .itemType ul {
   padding-bottom: 40px;
   line-height: 1.7em; }
 
+section .sidebar .refine .itemType ul input .radio:checked {
+  background-color: white;
+  color: #3EAAC3; }
+
 section .sidebar .refine .itemType ul label {
   color: #3EAAC3; }
 
 section .sidebar .refine .price {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #B2B2B2;
   padding-bottom: 40px; }
 
 section .sidebar .refine .price span {
@@ -122,11 +155,71 @@ section .sidebar .refine .price span {
 
 section .sidebar .refine .price label {
   padding: 15px;
-  border: 1px solid gray;
-  color: #B2B2B2; }
+  border: 1px solid #B2B2B2;
+  color: #B2B2B2;
+  border-radius: 5px; }
 
 section .sidebar .refine .price label .arrow {
   padding: 8px; }
+
+section .sidebar .refine .filterByColor {
+  display: inline; }
+
+section .sidebar .refine .filterByColor .red {
+  height: 20px;
+  width: 20px;
+  background-color: #F11439;
+  border: 1px solid #B2B2B2;
+  border-radius: 5px; }
+
+section .sidebar .refine .filterByColor .orange {
+  height: 20px;
+  width: 20px;
+  background-color: #FD7F23;
+  border: 1px solid #B2B2B2;
+  border-radius: 5px; }
+
+section .sidebar .refine .filterByColor .yellow {
+  height: 20px;
+  width: 20px;
+  background-color: #F2CB30;
+  border: 1px solid #B2B2B2;
+  border-radius: 5px; }
+
+section .sidebar .refine .filterByColor .green {
+  height: 20px;
+  width: 20px;
+  background-color: #20C024;
+  border: 1px solid #B2B2B2;
+  border-radius: 5px; }
+
+section .sidebar .refine .filterByColor .blue {
+  height: 20px;
+  width: 20px;
+  background-color: #26CCF1;
+  border: 1px solid #B2B2B2;
+  border-radius: 5px; }
+
+section .sidebar .refine .filterByColor .purple {
+  height: 20px;
+  width: 20px;
+  background-color: #A527EF;
+  border: 1px solid #B2B2B2;
+  border-radius: 5px; }
+
+section .sidebar .refine .filterByColor .black {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border: 1px solid #B2B2B2;
+  border-radius: 5px; }
+
+section .sidebar .refine .filterByColor .white {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 1px solid #B2B2B2;
+  border-radius: 5px; }
 
 section .content {
   float: left;
