@@ -3,20 +3,41 @@
 
 $backgroundColor: #F5F5F1;
 $teal: #3EAAC3;
+$lightGray: #B2B2B2;
+$limeGreen: #7BBE4C;
+$roboto: 'Roboto', sans-serif;
 
 .outerContainer {
   width: 100%;
   background-color: $backgroundColor;
+
 }
 
 header {
-  height: 80px;
   background-color: white;
+
+  .headerContent {
+    height: 80px;
+
+
+  }
+
+  .headerLeft {
+    float: left;
+
+  }
+
+  .headerRight {
+    float: right;
+    margin-top: 25px;
+    margin-right: 50px;
+  }
 
 
   ul {
     list-style: none;
     display: -webkit-inline-box;
+    margin-top: -10px;
 
   .logo {
     width: 100px;
@@ -24,17 +45,30 @@ header {
   }
 
   form {
+    margin-top: 40px;
 
-    button {
+    input {
+      width: 300px;
+      height: 33px;
+    }
+
+    .search {
       background-color: $teal;
       color: white;
+      height: 33px;
+      width: 82px;
       }
     }
 
-  button {
+  .browse {
     margin-top: 40px;
-    color: gray;
+    color: $lightGray;
     background-color: white;
+    margin-left: 20px;
+    height: 33px;
+    width: 82px;
+
+    //@include triangle (20px, gray, down);
     }
 
 
@@ -63,6 +97,13 @@ section {
         height: 335px;
         background-color: white;
         margin-bottom: 50px;
+        font-size: 14px;
+        line-height: 1.7em;
+
+        span {
+          margin-left: 20px;
+
+        }
 
         ul {
           list-style: none;
@@ -73,7 +114,7 @@ section {
           list-style: none;
           color: $teal;
           text-decoration: none;
-          line-height: 1.5em;
+          // line-height: 1.5em;
 
         }
 
@@ -82,10 +123,88 @@ section {
       .refine {
         height: 680px;
         background-color: white;
+        font-size: 14px;
+
+        .itemType span {
+          display: block;
+        }
+
+        .itemType ul {
+          list-style: none;
+          border-bottom: 1px solid gray;
+          padding-bottom: 40px;
+          line-height: 1.7em;
+
+          // input.radio:checked ~ label {
+          //   background-color:white;
+          //   color: $teal;
+          // }
+
+          label {
+            color: $teal;
+            }
+        }
+
+        .price {
+          border-bottom: 1px solid gray;
+          padding-bottom: 40px;
+        }
+
+        .price span {
+          display: block;
+
+        }
+
+        .price label {
+          padding: 15px;
+          border: 1px solid gray;
+          color: $lightGray;
+
+          .arrow {
+            padding: 8px;
+          }
+        }
       }
   }
+
+
   .content {
     @include span-columns(9);
+    font-size: 12px;
+
+    img {
+      width: 251px;
+    }
+
+    .resultsTitle {
+      padding-left: 12px;
+      white-space: nowrap;
+      margin-bottom: 10px;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: $roboto;
+
+    }
+
+    .resultsShop {
+      display: inline;
+      color: $lightGray;
+      margin-left: 12px;
+    }
+
+    .resultsPrice {
+      display: inline;
+      color: $limeGreen;
+    }
+
+    .resultsCurrencyCode {
+      display: inline;
+      color: $limeGreen;
+
+
+    }
+
 
     ul {
       margin: 0 auto;
@@ -94,12 +213,13 @@ section {
 
     li {
       list-style: none;
-      height: 200px;
-      // width: 200px;
+      height: 260px;
+      border: 1px solid $lightGray;
       background-color: white;
       margin-bottom: 25px;
       @include span-columns(3 of 9);
       @include omega(3n);
+
 
 
 

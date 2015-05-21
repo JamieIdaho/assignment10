@@ -11,25 +11,48 @@ html {
   background-color: #F5F5F1; }
 
 header {
-  height: 80px;
   background-color: white; }
+
+header .headerContent {
+  height: 80px; }
+
+header .headerLeft {
+  float: left; }
+
+header .headerRight {
+  float: right;
+  margin-top: 25px;
+  margin-right: 50px; }
 
 header ul {
   list-style: none;
-  display: -webkit-inline-box; }
+  display: -webkit-inline-box;
+  margin-top: -10px; }
 
 header ul .logo {
   width: 100px;
   margin-top: 23px; }
 
-header ul form button {
-  background-color: #3EAAC3;
-  color: white; }
+header ul form {
+  margin-top: 40px; }
 
-header ul button {
+header ul form input {
+  width: 300px;
+  height: 33px; }
+
+header ul form .search {
+  background-color: #3EAAC3;
+  color: white;
+  height: 33px;
+  width: 82px; }
+
+header ul .browse {
   margin-top: 40px;
-  color: gray;
-  background-color: white; }
+  color: #B2B2B2;
+  background-color: white;
+  margin-left: 20px;
+  height: 33px;
+  width: 82px; }
 
 header ul img {
   width: 30px;
@@ -58,7 +81,12 @@ section .sidebar:last-child {
 section .sidebar .categories {
   height: 335px;
   background-color: white;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 1.7em; }
+
+section .sidebar .categories span {
+  margin-left: 20px; }
 
 section .sidebar .categories ul {
   list-style: none; }
@@ -66,21 +94,74 @@ section .sidebar .categories ul {
 section .sidebar .categories li a {
   list-style: none;
   color: #3EAAC3;
-  text-decoration: none;
-  line-height: 1.5em; }
+  text-decoration: none; }
 
 section .sidebar .refine {
   height: 680px;
-  background-color: white; }
+  background-color: white;
+  font-size: 14px; }
+
+section .sidebar .refine .itemType span {
+  display: block; }
+
+section .sidebar .refine .itemType ul {
+  list-style: none;
+  border-bottom: 1px solid gray;
+  padding-bottom: 40px;
+  line-height: 1.7em; }
+
+section .sidebar .refine .itemType ul label {
+  color: #3EAAC3; }
+
+section .sidebar .refine .price {
+  border-bottom: 1px solid gray;
+  padding-bottom: 40px; }
+
+section .sidebar .refine .price span {
+  display: block; }
+
+section .sidebar .refine .price label {
+  padding: 15px;
+  border: 1px solid gray;
+  color: #B2B2B2; }
+
+section .sidebar .refine .price label .arrow {
+  padding: 8px; }
 
 section .content {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 74.41059%; }
+  width: 74.41059%;
+  font-size: 12px; }
 
 section .content:last-child {
   margin-right: 0; }
+
+section .content img {
+  width: 251px; }
+
+section .content .resultsTitle {
+  padding-left: 12px;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Roboto", sans-serif; }
+
+section .content .resultsShop {
+  display: inline;
+  color: #B2B2B2;
+  margin-left: 12px; }
+
+section .content .resultsPrice {
+  display: inline;
+  color: #7BBE4C; }
+
+section .content .resultsCurrencyCode {
+  display: inline;
+  color: #7BBE4C; }
 
 section .content ul {
   margin: 0 auto;
@@ -88,7 +169,8 @@ section .content ul {
 
 section .content li {
   list-style: none;
-  height: 200px;
+  height: 260px;
+  border: 1px solid #B2B2B2;
   background-color: white;
   margin-bottom: 25px;
   float: left;

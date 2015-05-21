@@ -3,6 +3,7 @@
 <head>
   <title>Etsy Search Results Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles/vendor/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -11,28 +12,45 @@
   <div class="outerContainer">
 
     <header>
+    <div class="headerContent">
+    <div class="headerLeft">
     <ul>
     <img class="logo" src="images/etsylogo.png">
     <form action "">
-      <input type=text>
-      <button>Search</button>
+      <input type="text" placeholder=" octopus art">
+      <button class="search">Search</button>
     </form>
-    <button>Browse</button>
+    <button class="browse">Browse</button>
     </ul>
-
+    </div><!--this is the end of the headerLeft div -->
+    <div class="headerRight">
     <ul>
       <li><img src="images/homeicon.png"></li>
       <li><img src="images/favoritesicon.png"></li>
       <li><img src="images/profileicon.png"></li>
       <li><img src="images/carticon.png"></li>
     </ul>
-
+    </div><!--this is the end of the headerRight div -->
+    </div><!--this is the end of the headerContent div -->
     </header>
+
+    <div class="aboveSection">
+      <div class="leftText">
+
+      </div><!--this is the end of the leftText div-->
+      <div class="middleText">
+
+      </div><!--this is the end of the middleText div-->
+      <div class="rightText">
+
+      </div><!--this is the end of the rightText div-->
+
+    </div><!--this is the end of the aboveSection div-->
 
     <section>
 
       <div class="sidebar">
-        <!-- <h3>Show results for:</h3> -->
+
           <div class="categories">
 
             <span>All Categories</span>
@@ -54,23 +72,41 @@
           </div><!--this is the end of the categories div-->
         <!-- <h3> Refine your search</h3> -->
           <div class="refine">
+            <div class="itemType">
+              <span>Item Type</span>
+              <ul>
+              <li><input type="radio" id="radio1" class="radio" checked/>
+              <label for="radio1">All Items</label></li>
+              <li><input type="radio" id="radio2" class="radio">
+              <label for="radio2">Handmade</label></li>
+              <li><input type="radio" id="radio3" class="radio">
+              <label for="radio3">Vintage</label></li>
+              </ul>
+            </div><!--this is the end of the itemType div-->
+            <div class="price">
+              <span>Price</span>
+              <br>
+              <label type="text">$ Low</label>
+              <label type="text">$ High</label>
+              <label type="text" class="arrow"></label>
+              </br>
 
-          </div><!--this is the end of the refine div-->
+            </div><!--this is the end of the price div-->
+
+            <div class="filterByColor">
+              <span>Filter by Color</span>
+
+
+             </div> <!--this is the end of the filterByColor div-->
+
+          </div> <!--this is the end of the refine div -->
 
       </div><!--this is the end of the sidebar div-->
 
 
       <div class="content">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul id="contentResults">
+
 
 
         </ul>
