@@ -17,9 +17,14 @@ $purple: #A527EF;
 @mixin littleBoxes($height, $width, $color, $border){height: $height; width: $width; background-color: $color; border: $border};
 
 .outerContainer {
-  width: 100%;
-  background-color: $backgroundColor;
+  width: 1024px;
+  background-color: #F5F5F1;
+  margin: 0 auto;
 
+}
+
+body {
+  background-color: $backgroundColor;
 }
 
 header {
@@ -101,7 +106,8 @@ header {
   .aboveSection {
     height: 60px;
     font-size: 12px;
-    display: inline;
+    overflow: hidden;
+    @include outer-container();
     }
 
 
@@ -141,6 +147,8 @@ section {
         margin-bottom: 50px;
         font-size: 14px;
         line-height: 1.7em;
+        border: 1px solid $lightGray;
+        padding: 12px;
 
         span {
           margin-left: 20px;
@@ -163,9 +171,14 @@ section {
       }
 
       .refine {
-        height: 680px;
+        height: 729px;
         background-color: white;
         font-size: 14px;
+        border: 1px solid $lightGray;
+
+        .itemType {
+          padding: 12px;
+        }
 
         .itemType span {
           display: block;
@@ -189,8 +202,9 @@ section {
 
         .price {
           border-bottom: 1px solid $lightGray;
+          padding: 12px;
           padding-bottom: 40px;
-          //border-radius: 5px;
+
 
         }
 
@@ -212,57 +226,114 @@ section {
         }
       .filterByColor {
 
-        display: inline;
+        border-bottom: 1px solid $lightGray;
+        padding: 12px;
+
+        span {
+          width: 100%;
+          display: block;
+          margin-bottom: 15px;
+        }
 
           .red {
             @include littleBoxes(20px, 20px, $red, 1px solid $lightGray);
             border-radius: 5px;
+            margin: 0;
+            display: inline-block;
           }
 
           .orange {
 
             @include littleBoxes(20px, 20px, $orange, 1px solid $lightGray);
             border-radius: 5px;
+            margin: 0;
+            display: inline-block;
 
           }
 
           .yellow {
             @include littleBoxes(20px, 20px, $yellow, 1px solid $lightGray);
             border-radius: 5px;
+            display: inline-block;
 
           }
 
           .green {
             @include littleBoxes(20px, 20px, $green, 1px solid $lightGray);
             border-radius: 5px;
+            display: inline-block;
 
           }
 
           .blue {
             @include littleBoxes(20px, 20px, $blue, 1px solid $lightGray);
             border-radius: 5px;
+            display: inline-block;
 
           }
 
           .purple {
             @include littleBoxes(20px, 20px, $purple, 1px solid $lightGray);
             border-radius: 5px;
+            display: inline-block;
 
           }
 
           .black {
             @include littleBoxes(20px, 20px, black, 1px solid $lightGray);
             border-radius: 5px;
+            display: inline-block;
 
           }
 
           .white {
             @include littleBoxes(20px, 20px, white, 1px solid $lightGray);
             border-radius: 5px;
+            display: inline-block;
 
           }
 
 
+      }
+
+      .orderingOptions {
+        padding: 12px;
+        border-bottom: 1px solid $lightGray;
+      }
+
+      .orderingOptions ul {
+        list-style: none;
+      }
+
+      .orderingOptions ul li {
+        line-height: 1.5em;
+      }
+
+      .shopLocation {
+        padding: 12px;
+        border-bottom: 1px solid $lightGray;
+      }
+
+      .shopLocation ul {
+        list-style: none;
+      }
+
+      .shopLocation ul li {
+        line-height: 1.5em;
+      }
+
+      .shipTo {
+        padding: 12px;
+
+      }
+
+      .shipTo span {
+
+      }
+
+      .shipTo select {
+        width: 200px;
+        margin-top: 15px;
       }
 
       }

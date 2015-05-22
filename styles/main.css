@@ -7,7 +7,11 @@ html {
   box-sizing: inherit; }
 
 .outerContainer {
-  width: 100%;
+  width: 1024px;
+  background-color: #F5F5F1;
+  margin: 0 auto; }
+
+body {
   background-color: #F5F5F1; }
 
 header {
@@ -65,7 +69,15 @@ header ul img {
 .aboveSection {
   height: 60px;
   font-size: 12px;
-  display: inline; }
+  overflow: hidden;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.aboveSection::after {
+  clear: both;
+  content: "";
+  display: table; }
 
 .leftText {
   float: left;
@@ -112,7 +124,9 @@ section .sidebar .categories {
   background-color: white;
   margin-bottom: 50px;
   font-size: 14px;
-  line-height: 1.7em; }
+  line-height: 1.7em;
+  border: 1px solid #B2B2B2;
+  padding: 12px; }
 
 section .sidebar .categories span {
   margin-left: 20px; }
@@ -126,9 +140,13 @@ section .sidebar .categories li a {
   text-decoration: none; }
 
 section .sidebar .refine {
-  height: 680px;
+  height: 729px;
   background-color: white;
-  font-size: 14px; }
+  font-size: 14px;
+  border: 1px solid #B2B2B2; }
+
+section .sidebar .refine .itemType {
+  padding: 12px; }
 
 section .sidebar .refine .itemType span {
   display: block; }
@@ -148,6 +166,7 @@ section .sidebar .refine .itemType ul label {
 
 section .sidebar .refine .price {
   border-bottom: 1px solid #B2B2B2;
+  padding: 12px;
   padding-bottom: 40px; }
 
 section .sidebar .refine .price span {
@@ -163,63 +182,106 @@ section .sidebar .refine .price label .arrow {
   padding: 8px; }
 
 section .sidebar .refine .filterByColor {
-  display: inline; }
+  border-bottom: 1px solid #B2B2B2;
+  padding: 12px; }
+
+section .sidebar .refine .filterByColor span {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px; }
 
 section .sidebar .refine .filterByColor .red {
   height: 20px;
   width: 20px;
   background-color: #F11439;
   border: 1px solid #B2B2B2;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin: 0;
+  display: inline-block; }
 
 section .sidebar .refine .filterByColor .orange {
   height: 20px;
   width: 20px;
   background-color: #FD7F23;
   border: 1px solid #B2B2B2;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin: 0;
+  display: inline-block; }
 
 section .sidebar .refine .filterByColor .yellow {
   height: 20px;
   width: 20px;
   background-color: #F2CB30;
   border: 1px solid #B2B2B2;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: inline-block; }
 
 section .sidebar .refine .filterByColor .green {
   height: 20px;
   width: 20px;
   background-color: #20C024;
   border: 1px solid #B2B2B2;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: inline-block; }
 
 section .sidebar .refine .filterByColor .blue {
   height: 20px;
   width: 20px;
   background-color: #26CCF1;
   border: 1px solid #B2B2B2;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: inline-block; }
 
 section .sidebar .refine .filterByColor .purple {
   height: 20px;
   width: 20px;
   background-color: #A527EF;
   border: 1px solid #B2B2B2;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: inline-block; }
 
 section .sidebar .refine .filterByColor .black {
   height: 20px;
   width: 20px;
   background-color: black;
   border: 1px solid #B2B2B2;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: inline-block; }
 
 section .sidebar .refine .filterByColor .white {
   height: 20px;
   width: 20px;
   background-color: white;
   border: 1px solid #B2B2B2;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: inline-block; }
+
+section .sidebar .refine .orderingOptions {
+  padding: 12px;
+  border-bottom: 1px solid #B2B2B2; }
+
+section .sidebar .refine .orderingOptions ul {
+  list-style: none; }
+
+section .sidebar .refine .orderingOptions ul li {
+  line-height: 1.5em; }
+
+section .sidebar .refine .shopLocation {
+  padding: 12px;
+  border-bottom: 1px solid #B2B2B2; }
+
+section .sidebar .refine .shopLocation ul {
+  list-style: none; }
+
+section .sidebar .refine .shopLocation ul li {
+  line-height: 1.5em; }
+
+section .sidebar .refine .shipTo {
+  padding: 12px; }
+
+section .sidebar .refine .shipTo select {
+  width: 200px;
+  margin-top: 15px; }
 
 section .content {
   float: left;
