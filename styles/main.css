@@ -16,60 +16,51 @@ body {
 
 header {
   background-color: white; }
-
-header .headerContent {
-  height: 80px;
-  border-bottom: 1px solid #B2B2B2; }
-
-header .headerLeft {
-  float: left;
-  height: 80px; }
-
-header .headerLeft ul {
-  padding-left: 62px; }
-
-header .headerRight {
-  float: right;
-  margin-top: 25px;
-  margin-right: 78px; }
-
-header ul {
-  list-style: none;
-  display: -webkit-inline-box;
-  margin-top: -10px; }
-
-header ul .logo {
-  width: 100px;
-  margin-top: 23px; }
-
-header ul form {
-  margin-top: 40px; }
-
-header ul form input {
-  width: 300px;
-  height: 33px;
-  border-radius: 5px; }
-
-header ul form .search {
-  background-color: #3EAAC3;
-  color: white;
-  height: 33px;
-  width: 82px;
-  border-radius: 5px;
-  margin-left: -8px; }
-
-header ul .browse {
-  margin-top: 40px;
-  color: #B2B2B2;
-  background-color: white;
-  margin-left: 20px;
-  height: 33px;
-  width: 82px;
-  border-radius: 5px; }
-
-header ul img {
-  width: 30px;
-  margin: 10px; }
+  header .headerContent {
+    height: 80px;
+    border-bottom: 1px solid #B2B2B2; }
+  header .headerLeft {
+    float: left;
+    height: 80px; }
+    header .headerLeft ul {
+      padding-left: 62px; }
+  header .headerRight {
+    float: right;
+    margin-top: 25px;
+    margin-right: 78px; }
+  header ul {
+    list-style: none;
+    display: -webkit-inline-box;
+    margin-top: -10px; }
+    header ul .logo {
+      width: 100px;
+      margin-top: 23px; }
+    header ul form {
+      margin-top: 40px; }
+      header ul form input {
+        width: 300px;
+        height: 33px;
+        border-radius: 5px; }
+      header ul form .search {
+        background-color: #3EAAC3;
+        color: white;
+        height: 33px;
+        width: 82px;
+        border-radius: 5px;
+        margin-left: -8px; }
+    header ul .browse {
+      margin-top: 40px;
+      color: #B2B2B2;
+      background-color: white;
+      margin-left: 20px;
+      height: 33px;
+      width: 82px;
+      border-radius: 5px; }
+    header ul .browse::after {
+      content: header ul .browse::after; }
+    header ul img {
+      width: 30px;
+      margin: 10px; }
 
 .aboveSection {
   height: 60px;
@@ -82,11 +73,10 @@ header ul img {
   width: 100%;
   margin: 0;
   font-size: 14px; }
-
-.aboveSection::after {
-  clear: both;
-  content: "";
-  display: table; }
+  .aboveSection::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .leftText {
   float: left;
@@ -96,9 +86,8 @@ header ul img {
   height: 60px;
   padding-top: 35px;
   padding-left: 5px; }
-
-.leftText:last-child {
-  margin-right: 0; }
+  .leftText:last-child {
+    margin-right: 0; }
 
 .leftText span {
   color: #555555;
@@ -126,304 +115,267 @@ header ul img {
   margin-right: 2.35765%;
   width: 74.41059%;
   height: 60px; }
-
-.middleAndRight:last-child {
-  margin-right: 0; }
-
-.middleAndRight .middleText {
-  float: left;
-  padding-top: 35px; }
-
-.middleAndRight .rightText {
-  float: right;
-  padding-top: 35px;
-  padding-right: 5px; }
+  .middleAndRight:last-child {
+    margin-right: 0; }
+  .middleAndRight .middleText {
+    float: left;
+    padding-top: 35px; }
+  .middleAndRight a:hover {
+    text-decoration: underline; }
+  .middleAndRight .rightText {
+    float: right;
+    padding-top: 35px;
+    padding-right: 5px; }
 
 section {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px; }
-
-section::after {
-  clear: both;
-  content: "";
-  display: table; }
-
-section .sidebar {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%; }
-
-section .sidebar:last-child {
-  margin-right: 0; }
-
-section .sidebar .categories {
-  height: 335px;
-  background-color: white;
-  margin-bottom: 50px;
-  font-size: 14px;
-  line-height: 1.7em;
-  border: 1px solid #B2B2B2;
-  padding: 12px; }
-
-section .sidebar .categories span {
-  margin-left: 20px; }
-
-section .sidebar .categories ul {
-  list-style: none;
-  margin-top: 3px; }
-
-section .sidebar .categories li a {
-  list-style: none;
-  color: #3EAAC3;
-  text-decoration: none; }
-
-section .sidebar .refine {
-  height: 729px;
-  background-color: white;
-  font-size: 14px;
-  border: 1px solid #B2B2B2; }
-
-section .sidebar .refine .itemType {
-  padding: 12px;
-  border-bottom: 1px solid #B2B2B2; }
-
-section .sidebar .refine .itemType span {
-  display: block;
-  color: #555555;
-  font-weight: bold; }
-
-section .sidebar .refine .itemType ul {
-  list-style: none;
-  line-height: 1.7em; }
-
-section .sidebar .refine .itemType ul input .radio:checked {
-  background-color: white;
-  color: #3EAAC3; }
-
-section .sidebar .refine .itemType ul label {
-  color: #3EAAC3; }
-
-section .sidebar .refine .price {
-  border-bottom: 1px solid #B2B2B2;
-  padding: 12px;
-  padding-bottom: 40px; }
-
-section .sidebar .refine .price span {
-  display: block;
-  color: #555555;
-  font-weight: bold;
-  margin-bottom: 15px; }
-
-section .sidebar .refine .inbetween {
-  display: inline; }
-
-section .sidebar .refine .price label {
-  padding: 15px;
-  border: 1px solid #B2B2B2;
-  color: #B2B2B2;
-  border-radius: 5px; }
-
-section .sidebar .refine .price label .arrow {
-  padding: 8px; }
-
-section .sidebar .refine .filterByColor {
-  border-bottom: 1px solid #B2B2B2;
-  padding: 12px; }
-
-section .sidebar .refine .filterByColor span {
-  width: 100%;
-  display: block;
-  margin-bottom: 15px;
-  color: #555555;
-  font-weight: bold; }
-
-section .sidebar .refine .filterByColor .red {
-  height: 20px;
-  width: 20px;
-  background-color: #F11439;
-  border: 1px solid #B2B2B2;
-  border-radius: 5px;
-  margin: 0;
-  display: inline-block; }
-
-section .sidebar .refine .filterByColor .orange {
-  height: 20px;
-  width: 20px;
-  background-color: #FD7F23;
-  border: 1px solid #B2B2B2;
-  border-radius: 5px;
-  margin: 0;
-  display: inline-block; }
-
-section .sidebar .refine .filterByColor .yellow {
-  height: 20px;
-  width: 20px;
-  background-color: #F2CB30;
-  border: 1px solid #B2B2B2;
-  border-radius: 5px;
-  display: inline-block; }
-
-section .sidebar .refine .filterByColor .green {
-  height: 20px;
-  width: 20px;
-  background-color: #20C024;
-  border: 1px solid #B2B2B2;
-  border-radius: 5px;
-  display: inline-block; }
-
-section .sidebar .refine .filterByColor .blue {
-  height: 20px;
-  width: 20px;
-  background-color: #26CCF1;
-  border: 1px solid #B2B2B2;
-  border-radius: 5px;
-  display: inline-block; }
-
-section .sidebar .refine .filterByColor .purple {
-  height: 20px;
-  width: 20px;
-  background-color: #A527EF;
-  border: 1px solid #B2B2B2;
-  border-radius: 5px;
-  display: inline-block; }
-
-section .sidebar .refine .filterByColor .black {
-  height: 20px;
-  width: 20px;
-  background-color: black;
-  border: 1px solid #B2B2B2;
-  border-radius: 5px;
-  display: inline-block; }
-
-section .sidebar .refine .filterByColor .white {
-  height: 20px;
-  width: 20px;
-  background-color: white;
-  border: 1px solid #B2B2B2;
-  border-radius: 5px;
-  display: inline-block; }
-
-section .sidebar .refine .orderingOptions {
-  padding: 12px;
-  border-bottom: 1px solid #B2B2B2; }
-
-section .sidebar .refine .orderingOptions label {
-  color: #3EAAC3; }
-
-section .sidebar .refine .orderingOptions span {
-  color: #555555;
-  font-weight: bold; }
-
-section .sidebar .refine .orderingOptions ul {
-  list-style: none; }
-
-section .sidebar .refine .orderingOptions ul li {
-  line-height: 1.5em; }
-
-section .sidebar .refine .shopLocation {
-  padding: 12px;
-  border-bottom: 1px solid #B2B2B2; }
-
-section .sidebar .refine .shopLocationSpan {
-  color: #555555;
-  font-weight: bold; }
-
-section .sidebar .refine .anywhereLabel {
-  color: #555555;
-  font-weight: bold; }
-
-section .sidebar .refine .unitedStatesLabel {
-  color: #3EAAC3; }
-
-section .sidebar .refine .customLocationSpan {
-  color: #3EAAC3; }
-
-section .sidebar .refine .shopLocation ul {
-  list-style: none; }
-
-section .sidebar .refine .shopLocation ul li {
-  line-height: 1.5em; }
-
-section .sidebar .refine .shipTo {
-  padding: 12px; }
-
-section .sidebar .refine .shipTo span {
-  color: #555555;
-  font-weight: bold; }
-
-section .sidebar .refine .shipTo select {
-  width: 200px;
-  margin-top: 15px;
-  height: 45px;
-  border: 0;
-  border: 1px solid #B2B2B2; }
-
-section .content {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 74.41059%;
-  font-size: 13px; }
-
-section .content:last-child {
-  margin-right: 0; }
-
-section .content img {
-  width: 251px; }
-
-section .content .belowTitle {
-  margin-top: 20px;
-  display: inline; }
-
-section .content .priceAndCurrency {
-  float: right;
-  margin-right: 15px; }
-
-section .content .resultsTitle {
-  padding-left: 12px;
-  white-space: nowrap;
-  margin-bottom: 17px;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-family: "Roboto", sans-serif; }
-
-section .content .resultsShop {
-  display: inline;
-  color: #B2B2B2;
-  margin-left: 12px; }
-
-section .content .resultsPrice {
-  display: inline;
-  color: #7BBE4C; }
-
-section .content .resultsCurrencyCode {
-  display: inline;
-  color: #7BBE4C; }
-
-section .content ul {
-  margin: 0 auto;
-  padding: 0; }
-
-section .content li {
-  list-style: none;
-  height: 260px;
-  border: 1px solid #B2B2B2;
-  background-color: white;
-  margin-bottom: 25px;
-  float: left;
-  display: block;
-  margin-right: 3.16844%;
-  width: 31.22104%; }
-
-section .content li:last-child {
-  margin-right: 0; }
-
-section .content li:nth-child(3n) {
-  margin-right: 0; }
-
-section .content li:nth-child(3n+1) {
-  clear: left; }
+  section::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section .sidebar {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    section .sidebar:last-child {
+      margin-right: 0; }
+    section .sidebar .categories {
+      height: 335px;
+      background-color: white;
+      margin-bottom: 50px;
+      font-size: 14px;
+      line-height: 1.7em;
+      border: 1px solid #B2B2B2;
+      padding: 12px; }
+      section .sidebar .categories span {
+        margin-left: 20px; }
+      section .sidebar .categories ul {
+        list-style: none;
+        margin-top: 3px; }
+      section .sidebar .categories li a {
+        list-style: none;
+        color: #3EAAC3;
+        text-decoration: none; }
+      section .sidebar .categories a:hover {
+        text-decoration: underline; }
+    section .sidebar .refine {
+      height: 729px;
+      background-color: white;
+      font-size: 14px;
+      border: 1px solid #B2B2B2; }
+      section .sidebar .refine .itemType {
+        padding: 12px;
+        border-bottom: 1px solid #B2B2B2; }
+      section .sidebar .refine .itemType span {
+        display: block;
+        color: #555555;
+        font-weight: bold; }
+      section .sidebar .refine .itemType ul {
+        list-style: none;
+        line-height: 1.7em; }
+        section .sidebar .refine .itemType ul a:hover {
+          text-decoration: underline;
+          color: #3EAAC3; }
+        section .sidebar .refine .itemType ul .allItems:hover {
+          text-decoration: underline;
+          color: #555555; }
+        section .sidebar .refine .itemType ul input .radio:checked {
+          background-color: white;
+          color: #3EAAC3; }
+        section .sidebar .refine .itemType ul label {
+          color: #3EAAC3; }
+        section .sidebar .refine .itemType ul .allItems {
+          color: #555555; }
+      section .sidebar .refine .price {
+        border-bottom: 1px solid #B2B2B2;
+        padding: 12px;
+        padding-bottom: 40px; }
+      section .sidebar .refine .price span {
+        display: block;
+        color: #555555;
+        font-weight: bold;
+        margin-bottom: 15px; }
+      section .sidebar .refine .price label {
+        padding: 15px;
+        border: 1px solid #B2B2B2;
+        color: #B2B2B2;
+        border-radius: 5px; }
+        section .sidebar .refine .price label .arrow {
+          padding: 8px; }
+      section .sidebar .refine .price label:hover {
+        border: 1px solid black; }
+      section .sidebar .refine .filterByColor {
+        border-bottom: 1px solid #B2B2B2;
+        padding: 12px; }
+        section .sidebar .refine .filterByColor span {
+          width: 100%;
+          display: block;
+          margin-bottom: 15px;
+          color: #555555;
+          font-weight: bold; }
+        section .sidebar .refine .filterByColor .red {
+          height: 20px;
+          width: 20px;
+          background-color: #F11439;
+          border: 1px solid #B2B2B2;
+          border-radius: 5px;
+          margin: 0;
+          display: inline-block; }
+        section .sidebar .refine .filterByColor .orange {
+          height: 20px;
+          width: 20px;
+          background-color: #FD7F23;
+          border: 1px solid #B2B2B2;
+          border-radius: 5px;
+          margin: 0;
+          display: inline-block; }
+        section .sidebar .refine .filterByColor .yellow {
+          height: 20px;
+          width: 20px;
+          background-color: #F2CB30;
+          border: 1px solid #B2B2B2;
+          border-radius: 5px;
+          display: inline-block; }
+        section .sidebar .refine .filterByColor .green {
+          height: 20px;
+          width: 20px;
+          background-color: #20C024;
+          border: 1px solid #B2B2B2;
+          border-radius: 5px;
+          display: inline-block; }
+        section .sidebar .refine .filterByColor .blue {
+          height: 20px;
+          width: 20px;
+          background-color: #26CCF1;
+          border: 1px solid #B2B2B2;
+          border-radius: 5px;
+          display: inline-block; }
+        section .sidebar .refine .filterByColor .purple {
+          height: 20px;
+          width: 20px;
+          background-color: #A527EF;
+          border: 1px solid #B2B2B2;
+          border-radius: 5px;
+          display: inline-block; }
+        section .sidebar .refine .filterByColor .black {
+          height: 20px;
+          width: 20px;
+          background-color: black;
+          border: 1px solid #B2B2B2;
+          border-radius: 5px;
+          display: inline-block; }
+        section .sidebar .refine .filterByColor .white {
+          height: 20px;
+          width: 20px;
+          background-color: white;
+          border: 1px solid #B2B2B2;
+          border-radius: 5px;
+          display: inline-block; }
+      section .sidebar .refine .orderingOptions {
+        padding: 12px;
+        border-bottom: 1px solid #B2B2B2; }
+        section .sidebar .refine .orderingOptions label {
+          color: #3EAAC3; }
+      section .sidebar .refine .orderingOptions a:hover {
+        text-decoration: underline;
+        color: #3EAAC3; }
+      section .sidebar .refine .orderingOptions span {
+        color: #555555;
+        font-weight: bold; }
+      section .sidebar .refine .orderingOptions ul {
+        list-style: none; }
+      section .sidebar .refine .orderingOptions ul li {
+        line-height: 1.5em; }
+      section .sidebar .refine .shopLocation {
+        padding: 12px;
+        border-bottom: 1px solid #B2B2B2; }
+      section .sidebar .refine .shopLocation a:hover {
+        text-decoration: underline;
+        color: #3EAAC3; }
+      section .sidebar .refine .anywhereLabel:hover {
+        text-decoration: underline;
+        color: #555555; }
+      section .sidebar .refine .shopLocationSpan {
+        color: #555555;
+        font-weight: bold; }
+      section .sidebar .refine .anywhereLabel {
+        color: #555555;
+        font-weight: bold; }
+      section .sidebar .refine .unitedStatesLabel {
+        color: #3EAAC3; }
+      section .sidebar .refine .customLocationSpan {
+        color: #3EAAC3; }
+      section .sidebar .refine .shopLocation ul {
+        list-style: none; }
+      section .sidebar .refine .shopLocation ul li {
+        line-height: 1.5em; }
+      section .sidebar .refine .shipTo {
+        padding: 12px; }
+      section .sidebar .refine .shipTo span {
+        color: #555555;
+        font-weight: bold; }
+      section .sidebar .refine .shipTo select {
+        width: 200px;
+        margin-top: 15px;
+        height: 45px;
+        border: 0;
+        border: 1px solid #B2B2B2; }
+  section .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+    font-size: 13px; }
+    section .content:last-child {
+      margin-right: 0; }
+    section .content img {
+      width: 251px; }
+    section .content a:hover {
+      text-decoration: underline; }
+    section .content .belowTitle {
+      margin-top: 20px;
+      display: inline; }
+    section .content .priceAndCurrency {
+      float: right;
+      margin-right: 15px; }
+    section .content .resultsTitle {
+      padding-left: 12px;
+      white-space: nowrap;
+      margin-bottom: 17px;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: "Roboto", sans-serif; }
+    section .content .resultsShop {
+      display: inline;
+      color: #B2B2B2;
+      margin-left: 12px; }
+    section .content .resultsPrice {
+      display: inline;
+      color: #7BBE4C; }
+    section .content .resultsCurrencyCode {
+      display: inline;
+      color: #7BBE4C; }
+    section .content ul {
+      margin: 0 auto;
+      padding: 0; }
+    section .content li {
+      list-style: none;
+      height: 260px;
+      border: 1px solid #B2B2B2;
+      background-color: white;
+      margin-bottom: 25px;
+      float: left;
+      display: block;
+      margin-right: 3.16844%;
+      width: 31.22104%; }
+      section .content li:last-child {
+        margin-right: 0; }
+      section .content li:nth-child(3n) {
+        margin-right: 0; }
+      section .content li:nth-child(3n+1) {
+        clear: left; }

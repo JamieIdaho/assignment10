@@ -91,8 +91,10 @@ header {
     height: 33px;
     width: 82px;
     border-radius: 5px;
+    }
 
-    //@include triangle (20px, gray, down);
+    .browse::after {
+      content: &#x25BE;
     }
 
 
@@ -135,6 +137,7 @@ header {
       font-weight: bold;
     }
 
+
     .allCategories {
       color: $teal;
     }
@@ -163,6 +166,10 @@ header {
     .middleText {
       float: left;
       padding-top: 35px;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     .rightText {
@@ -209,6 +216,10 @@ section {
           color: $teal;
           text-decoration: none;
           // line-height: 1.5em;
+          }
+
+          a:hover {
+            text-decoration: underline;
 
         }
 
@@ -231,10 +242,21 @@ section {
           font-weight: bold;
         }
 
+
+
         .itemType ul {
           list-style: none;
           line-height: 1.7em;
 
+          a:hover {
+          text-decoration: underline;
+          color: $teal;
+          }
+
+          .allItems:hover {
+            text-decoration: underline;
+            color: $boldFontColor;
+          }
 
           input .radio:checked {
             background-color:white;
@@ -244,6 +266,11 @@ section {
           label {
             color: $teal;
             }
+
+        .allItems {
+          color: $boldFontColor;
+          }
+
         }
 
         .price {
@@ -261,9 +288,7 @@ section {
           margin-bottom: 15px;
         }
 
-        .inbetween {
-          display: inline;
-        }
+
 
         .price label {
           padding: 15px;
@@ -276,6 +301,11 @@ section {
             padding: 8px;
           }
         }
+
+        .price label:hover{
+          border: 1px solid black;
+        }
+
       .filterByColor {
 
         border-bottom: 1px solid $lightGray;
@@ -359,6 +389,11 @@ section {
         }
       }
 
+      .orderingOptions a:hover {
+        text-decoration: underline;
+        color: $teal;
+      }
+
       .orderingOptions span {
         color: $boldFontColor;
         font-weight: bold;
@@ -375,6 +410,16 @@ section {
       .shopLocation {
         padding: 12px;
         border-bottom: 1px solid $lightGray;
+      }
+
+      .shopLocation a:hover {
+        text-decoration: underline;
+        color: $teal;
+      }
+
+      .anywhereLabel:hover {
+        text-decoration: underline;
+        color: $boldFontColor;
       }
 
       .shopLocationSpan {
@@ -435,6 +480,10 @@ section {
       width: 251px;
     }
 
+    a:hover {
+      text-decoration: underline;
+    }
+
     .belowTitle {
       margin-top: 20px;
       display: inline;
@@ -470,9 +519,7 @@ section {
     .resultsCurrencyCode {
       display: inline;
       color: $limeGreen;
-
-
-    }
+      }
 
 
     ul {
@@ -488,11 +535,6 @@ section {
       margin-bottom: 25px;
       @include span-columns(3 of 9);
       @include omega(3n);
-
-
-
-
-
       }
 
   }
