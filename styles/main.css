@@ -404,22 +404,11 @@ section .content:last-child {
   margin-right: 0; }
 
 section .content img {
-  width: 251px; }
+  width: 251px;
+  position: relative; }
 
 section .content a:hover {
   text-decoration: underline; }
-
-section .content .resultsImage a:hover {
-  position: relative; }
-
-section .content .resultsImage a:hover:after {
-  content: url("images/hamburger.png");
-  display: block;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  right: 10px;
-  top: 10px; }
 
 section .content .belowTitle {
   margin-top: 20px;
@@ -474,3 +463,24 @@ section .content li:nth-child(3n) {
 
 section .content li:nth-child(3n+1) {
   clear: left; }
+
+section .resultsImage {
+  position: relative; }
+
+section .resultsImage::before {
+  content: '';
+  background-image: url(../images/hamburger.png);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  bottom: 156px;
+  visibility: hidden;
+  background-color: #B2B2B2;
+  overflow: hidden;
+  z-index: 10;
+  background-repeat: no-repeat; }
+
+section .resultsImage:hover:before {
+  visibility: visible;
+  z-index: 1; }

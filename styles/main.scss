@@ -94,6 +94,8 @@ header {
     }
 
 
+
+
     .browse:hover {
       border: 1px solid black;
     }
@@ -478,34 +480,12 @@ section {
 
     img {
       width: 251px;
+      position:relative;
     }
 
     a:hover {
       text-decoration: underline;
     }
-
-    .resultsImage a:hover {
-      position: relative;
-
-
-    }
-
-    .resultsImage a:hover:after {
-
-      content: url('images/hamburger.png');
-      display: block;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      right: 10px;
-      top: 10px;
-
-
-    }
-
-
-
-
 
     .belowTitle {
       margin-top: 20px;
@@ -561,6 +541,32 @@ section {
       }
 
   }
+
+  .resultsImage {
+    position: relative;
+  }
+
+  .resultsImage::before {
+      content: '';
+      background-image: url(../images/hamburger.png);
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      right: 10px;
+      bottom: 156px;
+      visibility: hidden;
+      background-color: $lightGray;
+      overflow: hidden;
+      z-index: 10;
+      background-repeat: no-repeat;
+
+    }
+
+    .resultsImage:hover:before {
+      visibility: visible;
+      z-index: 1;
+    }
+
 
 }
 
