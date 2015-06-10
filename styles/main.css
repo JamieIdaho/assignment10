@@ -17,6 +17,14 @@ body {
 header {
   background-color: white; }
 
+header .pizza {
+  font-family: "Roboto", sans-serif;
+  color: #555555;
+  font-size: 12px;
+  display: block;
+  margin-top: -10px;
+  padding-left: 14px; }
+
 header .headerContent {
   height: 80px;
   border-bottom: 1px solid #B2B2B2; }
@@ -30,7 +38,7 @@ header .headerLeft ul {
 
 header .headerRight {
   float: right;
-  margin-top: 25px;
+  margin-top: 16px;
   margin-right: 78px; }
 
 header ul {
@@ -48,7 +56,8 @@ header ul form {
 header ul form input {
   width: 300px;
   height: 33px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  outline: none; }
 
 header ul form .search {
   background-color: #3EAAC3;
@@ -72,7 +81,7 @@ header ul .browse:hover {
 
 header ul img {
   width: 30px;
-  margin: 10px; }
+  margin: 12px; }
 
 .aboveSection {
   height: 60px;
