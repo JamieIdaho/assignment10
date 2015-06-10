@@ -470,17 +470,38 @@ section .resultsImage {
 section .resultsImage::before {
   content: '';
   background-image: url(../images/hamburger.png);
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   right: 10px;
-  bottom: 156px;
+  bottom: 165px;
   visibility: hidden;
-  background-color: #B2B2B2;
+  background-color: white;
   overflow: hidden;
   z-index: 10;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  padding: 5px; }
 
 section .resultsImage:hover:before {
+  visibility: visible;
+  z-index: 1; }
+
+section .resultsImage::after {
+  content: '';
+  background-image: url(../images/heart.png);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 50px;
+  bottom: 165px;
+  visibility: hidden;
+  background-color: white;
+  z-index: 10;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  padding: 5px; }
+
+section .resultsImage:hover:after {
   visibility: visible;
   z-index: 1; }

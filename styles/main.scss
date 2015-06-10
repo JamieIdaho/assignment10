@@ -549,23 +549,45 @@ section {
   .resultsImage::before {
       content: '';
       background-image: url(../images/hamburger.png);
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       position: absolute;
       right: 10px;
-      bottom: 156px;
+      bottom: 165px;
       visibility: hidden;
-      background-color: $lightGray;
+      background-color: white;
       overflow: hidden;
       z-index: 10;
       background-repeat: no-repeat;
-
+      border-radius: 3px;
+      padding: 5px;
     }
 
     .resultsImage:hover:before {
       visibility: visible;
       z-index: 1;
     }
+
+  .resultsImage::after {
+    content: '';
+    background-image: url(../images/heart.png);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    bottom: 165px;
+    visibility: hidden;
+    background-color: white;
+    z-index: 10;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    padding: 5px;
+  }
+
+  .resultsImage:hover:after {
+    visibility: visible;
+    z-index: 1;
+  }
 
 
 }
